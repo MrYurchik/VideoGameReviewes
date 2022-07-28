@@ -1,0 +1,47 @@
+[
+  {
+    "author": "BioWare",
+    "description": "Mass Effect: Andromeda is an action role-playing video game developed by BioWare and published by Electronic Arts. The fourth major entry in the Mass Effect series, it was released in March 2017 for Microsoft Windows, PlayStation 4, and Xbox One.",
+    "genre": "Action role-playing game, Third-person shooter",
+    "id": 2,
+    "notes": "This was my first Mass Effect game so I don't have the bias blinding me most critics have. Well actually I started playing the the first one many years back and thought it was boring so I stopped. Been hearing it got better with 2 and 3. Which is interesting. The series is great not because of its first game but because of its sequels, yet Andromeda won't be given an equal chance to prove itself because gamers of today are too ADHD or nostalgic.",
+    "rating": 4,
+    "title": "Mass Effect: Andromeda"
+  },
+  {
+    "author": "CD Projekt",
+    "description": "The Witcher 3: Wild Hunt is an action role-playing video game developed by Polish developer CD Projekt Red, and first published in 2015. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third game in The Witcher video game series, played in an open world with a third-person perspective. ",
+    "genre": "Action role-playing game",
+    "id": 3,
+    "notes": "Words can simply not describe how much I love this game",
+    "rating": 5,
+    "title": "The Witcher 3: Wild Hunt"
+  },
+  {
+    "author": "Guerrilla Games",
+    "description": "Horizon Zero Dawn is an action-adventure game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young huntress in a world overrun by machines, who sets out to uncover her past",
+    "genre": "Open world, Action role-playing game, Shooter Video Game, Action-adventure game, Nonlinear gameplay",
+    "id": 4,
+    "notes": "To put it short, Horizon: Zero Dawn is a stunning game. Every detail that deserved or should have attention received it.",
+    "rating": 4,
+    "title": "Horizon Zero Dawn"
+  },
+  {
+    "author": "Namco Bandai",
+    "description": "Bloodborne is a 2015 action role-playing game developed by FromSoftware and published by Sony Computer Entertainment for the PlayStation 4.",
+    "genre": "Action role-playing game, Action-adventure game, Survival horror",
+    "id": 5,
+    "notes": "Bloodborne is my favorite video game of all time. It's fascinating world is indescribably beautiful yet harrowing in it's \"Gothic-meets-Lovecraft\" aesthetic.",
+    "rating": 5,
+    "title": "Bloodborne"
+  },
+  {
+    "author": "Xbox Game Studios, Playground Games",
+    "description": "Forza Horizon 5 is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios. It is the fifth Forza Horizon title and twelfth main instalment in the Forza series. The game is set in a fictionalised representation of Mexico. ",
+    "genre": "Racing Video Game, Simulation Video Game, Action game, Adventure game",
+    "id": 6,
+    "notes": "Чувствуется влияние \"Касаясь пустоты\".",
+    "rating": 4,
+    "title": "Forza Horizon 5"
+  }
+]

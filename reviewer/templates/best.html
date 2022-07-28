@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mx-auto mt-4">
+  <div class="d-flex justify-content-center">
+
+{% for game in games.items %}
+
+<div class="card">
+  <div class="card-img">
+    <img class="card-img" src="{{ url_for('send_file', filename=book.cover) }}" alt="{{ game.cover }}">
+    <span><h4>{{ game.genre }}</h4></span>
+    <div class="overlay">
+      <div class="overlay-content">
+        <a href="{{ url_for('book', book_id=book.id)}}">More..</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-content">
+      <h2>{{ game.title }}</h2>
+      <h2>{% set stars = game.rating | int %}
+          {% for n in range(stars) %}
+          <span class="fa fa-star checked" style="color:orange"></span>
+          {% endfor %}
+       </h2>
+      <p>{{ game.description }}</p>
+     <div class="btn-wrapper text-center d-flex justify-content-between">
+      <button type="button" class="btn btn-info btn-sm">
+       <a href="#" style="color:white"><i class="fas fa-pen"></i> Change</a>
+      </button>
+       <form action="#" method="POST">
+         <button class='btn btn-danger btn-sm' type="submit" value="Delete" onclick="return confirm('Delete game????')"><i class="fa fa-times"></i> Delete</button>
+       </form>
+     </div>
+  </div>
+</div>
+{% endfor %}
+  </div>
+   </div>
+    {% for page_num in game.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+      {% if page_num %}
+        {% if game.page == page_num %}
+          <a class="btn btn-info mb-4" href="{{ url_for('best', page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a class="btn btn-outline-info mb-4" href="{{ url_for('best', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...
+      {% endif %}
+    {% endfor %}
+{% endblock %}
