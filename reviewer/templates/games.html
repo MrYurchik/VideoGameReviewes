@@ -33,9 +33,9 @@
       </h6>
 
       <div class="book-cover row justify-content-center  mb-4">
-          <a href="{{ url_for('send_file', filename=book.cover) }}"><img src="{{ url_for('send_file', filename=book.cover) }}" class="rounded mr-2" alt="Обложка {{ book.title }}"></a>
-          <a href="{{ url_for('send_file', filename='illustration.jpg') }}"><img src="{{ url_for('send_file', filename='illustration.jpg') }}" class="rounded mr-2" alt="Обложка {{ book.title }}"></a>
-          <a href="{{ url_for('send_file', filename='illustration.jpg') }}"><img src="{{ url_for('send_file', filename='illustration.jpg') }}" class="rounded mr-2" alt="Обложка {{ book.title }}"></a>
+          <a href="{{ url_for('send_file', filename=game.cover) }}"><img src="{{ url_for('send_file', filename=game.cover) }}" class="rounded mr-2" alt="Cover {{ game.title }}"></a>
+          <a href="{{ url_for('send_file', filename='illustration.jpg') }}"><img src="{{ url_for('send_file', filename='illustration.jpg') }}" class="rounded mr-2" alt="Cover {{ game.title }}"></a>
+          <a href="{{ url_for('send_file', filename='illustration.jpg') }}"><img src="{{ url_for('send_file', filename='illustration.jpg') }}" class="rounded mr-2" alt="Cover {{ game.title }}"></a>
       </div>
       <div>
       <h4 class="heading">Genre</h4>
@@ -52,10 +52,10 @@
       </div>
             <div class="text-center d-flex">
       <button type="button" class="btn btn-info btn-sm mr-4">
-       <a href="#" style="color:white; text-decoration:none"><i class="fas fa-pen"></i> Change</a>
+       <a href="{{ url_for('edit', game_id=game.id) }}" style="color:white; text-decoration:none"><i class="fas fa-pen"></i> Change</a>
       </button>
 
-      <form action="#" method="POST">
+      <form action="{{ url_for('delete', game_id=game.id) }}" method="POST">
         <button class='btn btn-danger btn-sm' type="submit" value="delete" onclick="return confirm('Delete game>>>>>>')"><i class="fa fa-times"></i> Delete</button>
       </form>
     </div>

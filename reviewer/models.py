@@ -1,12 +1,24 @@
+from dataclasses import dataclass
+
 from reviewer import db
 from sqlalchemy.sql import func
 
 
+@dataclass
 class Game(db.Model):
+    id: int
+    title: str
+    author: str
+    genre: str
+    cover: str
+    rating: int
+    description: str
+    notes: str
+    created_at: str
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), unique=True, nullable=False)
     author = db.Column(db.String(100), nullable=False)
-    genre = db.Column(db.String(20), nullable=False)
+    genre = db.Column(db.String(150), nullable=False)
     rating = db.Column(db.Integer)
     cover = db.Column(db.String(50), nullable=False, default="default.jpg")
     description = db.Column(db.Text)
